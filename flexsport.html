@@ -1,0 +1,489 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+           
+             * {
+               margin: 0;
+               padding:0;
+               box-sizing:border-box;
+             }
+            header {
+                text-align:center;
+                background:lightgrey;
+                color:black;
+            }
+            nav {
+                background:darkblue;
+                color:white;
+                padding:2vh;
+            }
+            footer {
+                background:darkblue;
+                color:white;
+                padding:2vh;
+                height:10vh;
+            }
+            .container {
+                min-height:70vh;
+                background:beige;
+                color:black;
+                padding:2vh;
+                width:80%;
+                margin:auto;
+              
+            
+            }
+            .flex-container{
+              display:flex;
+              flex-direction: column;
+              
+            }
+            .row {
+                display: flex;
+                flex-direction: row;
+                flex-wrap:wrap;
+                background: white;
+                margin: 1vh auto;
+                width:100%;
+            }
+            .row-item {
+               flex-basis: 30%;
+               text-align:center;
+               min-height: 30vh;
+               background: #db18c5;
+               margin: 1vh;
+               border: 1px black solid;
+            }
+            .row-item h3{
+                  padding: 1.5rem;
+                  font-size:1.5rem;
+                  background: #ffea00;
+            }
+            .row-item p{
+                font-size: 1.15rem;
+                color: black;
+                padding:1rem;
+            }
+            .row-movie{
+                height: 25vh;
+                background: black;
+            }
+            .flex-container h2 {
+              font-size:2rem;
+              padding:1rem;
+            }
+            .row-movie img{
+              display:block;
+              width: 100%
+              height:100%;
+              
+             }
+            .box-image {
+                 display:block;
+                 width:100%;
+                 
+            }
+            .box-image{
+                 height:30vh;
+                 background:lightgrey;
+                 overflow:hidden;
+                 
+            }
+            img{ width:55vh;
+            display:block;
+            height:25vh;
+                
+              
+            }
+        </style>
+        <title>Flexbox Favorite Music</title>
+    </head>
+    
+    <body>
+        <header>
+            <h1>Flexbox Rows: Favorite Music</h1>
+            <p>
+                Mufidul Choudhury<br>
+                Web 1, Hour:4th<br>
+                11/17/21
+            </p>
+            <hr>
+        </header>
+        <nav>
+            Placeholder
+        </nav>
+        <div class="container">
+            <!-- Write your assignment code here -->
+            <div class="flex-container">
+               
+                  <h2>Detroit Lions</h2>
+                <!-- Start of row 1-->
+                <div class="row">
+                  
+                      <div class="row-item">
+                        <div class="row-img">
+                          <!--iframe from youtube will go here -->
+                           <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3046779.png" alt="#">
+                        </div>
+                        <h3>Jared Goff</h3>
+                        <p>
+                            He is an quartarback player. He attend to Marin Catholic and also University of California.
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                    
+                    <div class="row-item">
+                        <div class="img">
+                          <!--ifrane from youtube will go here -->
+                        
+                         <img src="https://www.gannett-cdn.com/presto/2021/01/03/PDTF/0be3b4fb-1d92-464d-9555-1f60e2966cba-lionsminn_010321_kd168.jpg" alt="#">
+                        </div>
+                        <h3>D'Andre Swift</h3>
+                        <p>
+                            He is an Running back. He attend to University of Georgia.
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                  <div class="row-item">
+                        <div class="img">
+                          <!--iframe from youtube will go here -->
+                         <img src="https://cdn.vox-cdn.com/thumbor/QY9vVeaYErVrDcQOX4l7WxsLZCA=/0x0:4435x2956/1200x800/filters:focal(1425x1057:2133x1765)/cdn.vox-cdn.com/uploads/chorus_image/image/69932692/1235219925.0.jpg" alt="#">
+                          
+                        </div>
+                        <h3>Amon-Ra St. Brown</h3>
+                        <p>
+                           He is wide receiver.He went to University of Southern California.
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                  
+                  <div class="row-item">
+                        <div class="row-movie">
+                          <!--ifrane from youtube will go here -->
+                          
+                           <!--ifrane from youtube will go here -->
+                           <img src="https://www.gannett-cdn.com/presto/2021/09/12/PDTF/e11c2488-6b7f-4114-897e-e0b9d1cc2987-Lions49ers_091221_090423_2.jpg?width=660&height=515&fit=crop&format=pjpg&auto=webp" alt="#">
+                        </div>
+                        <h3>Jamaal Williams</h3>
+                        <p>
+                            He is a running back. He went to  Brigham Young University .
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                    
+                    <div class="row-item">
+                        <div class="row-movie">
+                          <!--ifrane from youtube will go here -->
+                          
+                           <!--ifrane from youtube will go here -->
+                          <img src="https://cdn.vox-cdn.com/thumbor/4jKC3Xfy3aiSh5MJVNz3sQ_aWLM=/0x0:1996x2998/1400x1400/filters:focal(754x255:1072x573):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/54525161/usa_today_9839813.0.jpg" alt="#">
+                        </div>
+                        <h3>Alex Anzalone</h3>
+                        <p>
+                           He is a linebacker. He played college football at Florida. He was drafted by the New Orleans Saints in the third round of the 2017 NFL Draft.
+
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                  
+                </div><!-- End of row-->
+                
+                
+                 <h2>New England Patriots</h2>
+                <!-- Start of row 2-->
+                <div class="row">
+                  
+                      <div class="row-item">
+                        <div class="row-movie">
+                          <!--iframe from youtube will go here -->
+                          
+                        <img src="https://cdn.vox-cdn.com/thumbor/_2DJhAScS0AKe54dUC4jmqF14XY=/0x0:768x432/1200x800/filters:focal(322x106:444x228)/cdn.vox-cdn.com/uploads/chorus_image/image/70155104/Patriots_Eagles_Football_79154_612024f531de8_768x432.0.jpg" alt="#">
+                          
+                        </div>
+                        <h3>Mac Jones</h3>
+                        <p>
+                            He is a quarterback. Jones accepted a scholarship offer from the University of Alabama.
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                    
+                    <div class="row-item">
+                        <div class="row-movie">
+                          <!--iframe from youtube will go here -->
+                          
+                          <img src="https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Fchowderandchampions.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2017%2F07%2F1339914722.jpeg" alt="#">
+                          
+                        </div>
+                        <h3>Damien Harris</h3>
+                        <p>
+                            He is a Running back. He went to the University of Alabama.
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                  <div class="row-item">
+                        <div class="row-movie">
+                          <!--iframe from youtube will go here -->
+                          <img src="https://heavy.com/wp-content/uploads/2021/09/gettyimages-1235242981-2048x2048-1-e1632110535171.jpg?quality=65&strip=all&w=780" alt="#">
+                          
+                        </div>
+                        <h3>Rhamondre Stevenson</h3>
+                        <p>
+                           He is a Running back. Stevenson played at Cerritos College for two seasons before transferring to the University of Oklahoma.
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                  
+                      <div class="row-item">
+                        <div class="row-movie">
+                          <!--iframe from youtube will go here -->
+                          
+                        <img src="https://fansided.com/wp-content/uploads/getty-images/2021/11/1335285847.jpeg" alt="#">
+                          
+                        </div>
+                        <h3>Matthew Judon</h3>
+                        <p>
+                           He is a Linebacker. He went to Grand Valley State University.
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                  
+                      <div class="row-item">
+                        <div class="row-movie">
+                          <!--iframe from youtube will go here -->
+                          
+                        <img src="https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/ap-jarrett-stidham-1603738251.jpg?crop=1.00xw:0.848xh;0,0&resize=900:*" alt="#">
+                          
+                        </div>
+                        <h3>Jarrett Stidham</h3>
+                        <p>
+                            He is a Quarterback; when to Baylor University and Auburn University.
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                    
+                  
+                  
+                </div><!-- End of row-->
+                
+                 <h2>Tampa Bay Buccaneers</h2>
+                <!-- Start of row 3-->
+                <div class="row">
+                  
+                      <div class="row-item">
+                        <div class="row-movie">
+                          <!--iframe from youtube will go here -->
+                          
+                         <img src="https://static01.nyt.com/images/2021/02/07/sports/07sb-oldbrady/07sb-oldbrady-mobileMasterAt3x.jpg" alt="#">
+                        </div>
+                        <h3>Tom Brady</h3>
+                        <p>
+                            He is a  quarterback. He went to  University of Michigan.
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                    <div class="row-item">
+                        <div class="row-movie">
+                          <!--iframe from youtube will go here -->
+                          
+                         <img src="https://thespun.com/wp-content/uploads/2020/12/GettyImages-1292274376.jpg" alt="#">
+                         
+                        </div>
+                        <h3>Antonio Brown</h3>
+                        <p>
+                           He is a wide receiver. He went to Central Michigan University.
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                    
+                    <div class="row-item">
+                        <div class="row-movie">
+                          <!--iframe from youtube will go here -->
+                          
+                         <img src="https://www.masslive.com/resizer/z8BxcBgu7pIe6-E9R17sAwK4kyY=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/44R5WZRBNFFGXA6NK36PIFUNKU.jpg" alt="#">
+                         
+                        </div>
+                        <h3>Rob Gronkowskic</h3>
+                        <p>
+                           He is a Tight end. He went to University of Arizona.
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                    
+                    <div class="row-item">
+                        <div class="row-movie">
+                          <!--iframe from youtube will go here -->
+                         <img src="https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Fthepewterplank.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2017%2F07%2F1344769944.jpeg" alt="#">
+                        </div>
+                        <h3>Richard Sherman </h3>
+                        <p>
+                            He is a Cornerback. He went to Stanford University.
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                  <div class="row-item">
+                        <div class="row-movie">
+                          <!--iframe from youtube will go here -->
+                         <img src="https://cdn.vox-cdn.com/thumbor/UN7FuBRwpJGhepNOMMGwFpw1Xh4=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22392847/1296936469.jpg" alt="#">
+                        </div>
+                        <h3>Mike Evans</h3>
+                        <p>
+                           He is a Wide receiver. He went to  Texas A&M University.
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                  
+                  
+                  
+                </div><!-- End of row-->
+                 <h2>Kansas City Chiefs</h2>
+                <!-- Start of row 4-->
+                <div class="row">
+                  
+                      <div class="row-item">
+                        <div class="row-movie">
+                          <!--iframe from youtube will go here -->
+                          <img src="https://cdn.images.express.co.uk/img/dynamic/4/590x/1031368_1.jpg?r=1539561869219" alt="#">
+                        </div>
+                        <h3>Patrick Mahomes II</h3>
+                        <p>
+                           He is a Quarterback. He went to  Texas Tech University.
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                    
+                    <div class="row-item">
+                        <div class="row-movie">
+                          <!--iframe from youtube will go here -->
+                        <img src="https://www.gannett-cdn.com/presto/2019/07/19/USAT/22f389d6-9bca-44f0-81c1-2224bdfa23b8-USP_NFL__Houston_Texans_at_Kansas_City_Chiefs.JPG" alt="#">
+                        </div>
+                        <h3>Tyreek Hill</h3>
+                        <p> He is a wide receiver. He went to University of West Alabama.
+
+                        
+                        </p>
+                            
+                      
+                    </div><!-- End row item item-->
+                  <div class="row-item">
+                        <div class="row-movie">
+                          <!--iframe from youtube will go here -->
+                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Chiefs_361_%2851615694173%29.jpg/800px-Chiefs_361_%2851615694173%29.jpg" alt="#">
+                        </div>
+                        <h3>Travis Kelce</h3>
+                        <p>
+                           He is a Tight end. He went to  University of Cincinnati.
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                    
+                    <div class="row-item">
+                        <div class="row-movie">
+                          <!--iframe from youtube will go here -->
+                         <img src="https://www.nflanalysis.net/wp-content/uploads/2020/08/Predicting-the-2020-NFL-season-for-Chiefs-RB-Clyde-Edwards-Helaire.jpg" alt="#">
+                        </div>
+                        <h3>Clyde Edwards-Helaire</h3>
+                        <p>
+                           He is a 	Running back. He went to Louisiana State University.
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                    
+                    <div class="row-item">
+                        <div class="row-movie">
+                          <!--iframe from youtube will go here -->
+                    <img src="https://www.mcclatchy-wires.com/incoming/l0afh2/picture218565160/alternates/FREE_1140/Browns_Gordon_Trade_Football_84955.jpg" alt="#">
+                        </div>
+                        <h3>Josh Gordon</h3>
+                        <p>
+                           He is a Wide receiver. He went to  Baylor University.
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                    
+                    
+                    </div><!-- End of row-->
+                 <h2>Green Bay Packers</h2>
+                  
+                                  <!-- Start of row 4-->
+                <div class="row">
+                  
+                      <div class="row-item">
+                        <div class="row-movie">
+                         <img src="https://static.www.nfl.com/image/private/t_editorial_landscape_12_desktop/league/ioe9b0kmudetix3yh0t3" alt="#">
+                        </div>
+                        <h3>Aaron Rodgers</h3>
+                        <p>
+                           He is a 	Quarterback.He went to Butte College and University of California, Berkeley.
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                    
+                    <div class="row-item">
+                        <div class="row-movie">
+                          <!--iframe from youtube will go here -->
+                         <img src="https://media.bleacherreport.com/f_auto,w_1440,q_auto,c_fill/br-cms/95/56/a6/46/a59d/4f20/aee6/2b102424aaf4/crop_exact_AP21333037601807.jpeg" alt="#">
+                        </div>
+                        <h3>Davante Adams</h3>
+                        <p>
+                            He is a Wide receiver. He went to  California State University, Fresno.
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                  <div class="row-item">
+                        <div class="row-movie">
+                          <!--iframe from youtube will go here -->
+                          <img src="https://cheeseheadtv.com/sites/default/files/styles/insert_image_to_post_body/public/post/2021/12/ja.jpg?itok=qfWZndIR" alt="#">
+                        </div>
+                        <h3>Jaire Alexander</h3>
+                        <p>
+                           He is a Cornerback. He went to University of Louisville.
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                    
+                    <div class="row-item">
+                        <div class="row-movie">
+                          <!--iframe from youtube will go here -->
+                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Aaron_Jones_WFT_vs_Packers_OCT2021_%28cropped%29.jpg/220px-Aaron_Jones_WFT_vs_Packers_OCT2021_%28cropped%29.jpg" alt="#">
+                        </div>
+                        <h3>Aaron Jones</h3>
+                        <p>
+                           He is a Running back. He went to University of Texas at El Paso.
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                    
+                    <div class="row-item">
+                        <div class="row-movie">
+                          <!--iframe from youtube will go here -->
+                         <img src="https://www.gannett-cdn.com/presto/2021/10/04/PAPN/58b09a83-68c8-45cf-8f0b-4f2adddbe219-APC_PackVSSteelers_1003212361djp.jpg" alt="#">
+                        </div>
+                        <h3>Randall Cobb</h3>
+                        <p>
+                           He is a Wide receiver. He went to The University of Kentucky.
+                        </p>
+                      
+                    </div><!-- End row item item-->
+                  
+                  
+                </div><!-- End of row-->
+                
+                
+                
+                
+                
+            </div><!-- End flex container-->
+            
+          
+            
+            
+            
+            
+            
+        </div><!-- Closing tag for container -->
+        <footer>
+            Placeholder
+        </footer>
+    </body>
+</html>
