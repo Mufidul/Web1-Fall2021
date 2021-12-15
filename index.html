@@ -1,410 +1,101 @@
 <!doctype html>
 <html>
-<head>
-	<!-- CSS Will go under Here in STYLE Tags -->
-	<style>
-        /* CSS Variables for Color */
-        :root {
-            --mainbg:white;
-            --lightbg:#09c4e0;
-            --headercolor: white;
-            --navcolor:#001d3d;
-            --lighttext: #ffffff;
-            --darktext: White;
-            --footercolor: lightblue;
-        }
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-		header {
-			padding: 1vh;
-			text-align: center;
-		}
-		header h1 {
-			color: var(--darktext);
-			width: 60%;
-			margin: 1vh auto;
-			padding: 1vh;
-		}
-		nav {
-			background: var(--navcolor);
-			color: var(--lighttext);
-			padding: 2vh;
-		}
-		footer {
-			background: var(--navcolor);
-			color: var(--lighttext);
-			padding: 2vh;
-			min-height: 10vh;
-		}
-		.container {
-			background: var(--lightbg);
-			padding: 1vh;
-			min-height: 60vh;
-			width: 80%;
-			margin: auto;
-		}
-        /* New CSS Goes Under Here */
-          .jumbotron{
-            height:50vh;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items:center;
-          }
-          .jumbotron img {
-            width:100%;
-            display:block;
-            filter: brightness(.7) blur(3px);
-          }
-          .jumbotron-inner{
-                position:absolute;
-                text-align:center;
-                background:rgba(0,0,0,.4);
-                width:60%;
-                height:60%;
-                color: var(--lighttext);
-                border-radius:16px;
-          }
-          .jumbotron-inner > * {
-            padding: 1vh;
-            margin: 1vh;
-          }
-          .jumbotron-inner h1{
-            font-size: 3rem;
-          }
-          .jumbotron-inner p{
-              font-size:1.5rem;
-              line-height:2.15rem;
-          }
-          /* Container flex setup for row */
-          .container {
-            display:flex;
-            flex-flow: column nowrap;
-          }
-          .flex-container{
-              display:flex;
-              flex-flow: row wrap;
-              /* Since these are items in the container */
-              width: 100%;
-              justify-content:center;
-              align-items:center;
-              background: lightblue;
-          }
-          .section-header{
-                width:100%;
-                padding: 2vh;
-                font-size: 2rem;
-                background: var(--lightbg);
-                color:var(--darktext);
-                border-bottom: 1px black solid;
-                margin: 1vh auto;
-          }
-        .flex-item {
-          flex-basis: 30%;
-          min-width:200px;
-          padding: 1vh;
-          margin: 1vh auto;
-          text-align:center;
-          
-        }
-        .flex-item a {
-          display: block;
-          text-decoration: none;
-          color: var(--darktext);
-          border-radius: 8px;
-          overflow: hidden;
-        }
-        .flex-item a:hover {
-            box-shadow: 5px 5px 0px 2px #000000;
-        }
-        .item-image {
-          width:100%;
-          height:32vh;
-          background:cyan;
-          overflow:hidden;
-          
-        }
-        .item-image img{
-          display: block;
-          height: 100%;
-          margin:auto;
-        }
-        .item-heading {
-          background: var(--navcolor);
-          color: var(--lighttext);
-          font-size:1.5rem;
-          padding:1vh;
-        }
-        .item-text {
-            width: 100%
-            min-height:15vh;
-            background: var(--lightbg);
-            padding:1.25vh;
-        }
-
-	</style>
-
-    <!-- Link tags go here for external css -->
-
-
-    <!-- Responsive meta tag for viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
-
-	<title>Web 1 Final Index - Choudhury</title>
-
-</head>
-<body>
-	<header>
-		
-	</header>
-	<nav>
-		Placeholder
-	</nav>
-    <div class="jumbotron">
-        <img src="https://t4.ftcdn.net/jpg/02/86/02/67/360_F_286026740_xWkobcEk5g38qrH7cpfeImAnlUUSIrc5.jpg" alt="#">
-        <div class="jumbotron-inner">
-            <h1>Web Design Homepage</h1>
-            <p>
-                Mufidul Choudhury<br>
-                Web 1, 1st 4th<br>
-                12/9/21
-            </p>
-        </div>
-    </div>
-	<div class="container">
-		<!-- Put assignment specific code here -->
-
-        <!-- Start of a page section-->
-        <h3 class="section-header">Page Skeletons</h3>
-        <div class="flex-container">
-
-            <div class="flex-item">
-                <a href="skeleton.html" target="_blank">
-                <div class="item-image">
-                    <img src="https://cdn1.epicgames.com/ue/product/Screenshot/11-1920x1080-6990420d269d93bc8e3e8b41ece5882e.jpg?resize=1&w=1920" alt="#">
-                </div>
-                <div class="item-heading">
-                    Skeleton v.1
-                </div>
-                <div class="item-text">
-                    This was our first website structure. We use this structure in builting other website later one. This was our first and most basic html website structure.
-                </div>
-                </a>
-            </div><!-- End Flex Item-->
-
-            <div class="flex-item">
-                <a href="skeleton-v2.html" target="_blank">
-                <div class="item-image">
-                    <img src="https://www.learningresources.com/media/catalog/product/l/e/ler3332_main.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=500&width=700&canvas=700:500" alt="#">
-                </div>
-                <div class="item-heading">
-                    Skeleton v.2
-                </div>
-                <div class="item-text">
-                   This was our second version of web structure. This included our first introduction to CSS.
-                </div>
-                </a>
-            </div><!-- End Flex Item-->
-
-            <div class="flex-item">
-                <a href="#" target="_blank">
-                <div class="item-image">
-                    <img src="https://cdn1.epicgames.com/ue/product/Screenshot/11-1920x1080-6990420d269d93bc8e3e8b41ece5882e.jpg?resize=1&w=1920" alt="#">
-                </div>
-                <div class="item-heading">
-                    Final Skeleton
-                </div>
-                <div class="item-text">
-                  This is our last version of web structure we used. This one included flex box structure of div tags.
-                </div>
-                </a>
-            </div><!-- End Flex Item-->
-
+    <head>
+        <style>
+         
             
-
-
-
-        </div><!-- End Flex Container -->
-
-        <!-- End of a page section -->
-
-        <!-- Start of a page section-->
-        <h3 class="section-header">Basic HTML/CSS Assignments</h3>
-        <div class="flex-container">
-
-            <div class="flex-item">
-                <a href="morefiles/favoriteMovie.html" target="_blank">
-                <div class="item-image">
-                    <img src="https://cdn.pixabay.com/photo/2017/12/06/07/42/cinema-3001163_1280.jpg" alt="#">
-                </div>
-                <div class="item-heading">
-                    Favorite Movie v.2
-                </div>
-                <div class="item-text">
-                   We made Favorite Movie v.2 used basic HTML/CSS to do it
-                   and uses.
-                </div>
-                </a>
-            </div><!-- End Flex Item-->
-
-            <div class="flex-item">
-                <a href="html favorite food.html" target="_blank">
-                <div class="item-image">
-                    <img src="https://images.everydayhealth.com/images/diet-nutrition/34da4c4e-82c3-47d7-953d-121945eada1e00-giveitup-unhealthyfood.jpg?sfvrsn=a31d8d32_0" alt="#">
-                </div>
-                <div class="item-heading">
-                    HtML Favorite Food v.3
-                </div>
-                <div class="item-text">
-                   We made favorite food by using basic HTML/CSS.
-                </div>
-                </a>
-            </div><!-- End Flex Item-->
-
-            <div class="flex-item">
-                <a href="htmlstreaming.html" target="_blank">
-                <div class="item-image">
-                    <img src="https://media.shellypalmer.com/wp-content/images/2018/06/streamingapps_comp.jpg" alt="#">
-                </div>
-                <div class="item-heading">
-                    HTML Streaming Assignment
-                </div>
-                <div class="item-text">
-                    we made favorite food by using basic html/css.
-                </div>
-                </a>
-            </div><!-- End Flex Item-->
-
-            <div class="flex-item">
-                <a href="shoppinglist2.html" target="_blank">
-                <div class="item-image">
-                    <img src="https://garlicdelight.com/wp-content/uploads/20210319-reverse-shopping-list.png" alt="#">
-                </div>
-                <div class="item-heading">
-                    We made favorite food by using basic html/css and also ul.
-                </div>
-                <div class="item-text">
-                    Item descrition
-                </div>
-                </a>
-            </div><!-- End Flex Item-->
-
             
-
-
-
-        </div><!-- End Flex Container -->
-
-        <!-- End of a page section -->
-
-        <!-- Start of a page section-->
-        <h3 class="section-header">CSS Flexbox</h3>
-        <div class="flex-container">
-
-            <div class="flex-item">
-                <a href="flexbox2.html" target="_blank">
-                <div class="item-image">
-                    <img src="https://www.positivelyosceola.com/wp-content/uploads/2020/03/streaming-948x640.jpg" alt="#">
-                </div>
-                <div class="item-heading">
-                    Streaming v.3
-                </div>
-                <div class="item-text">
-                    We made streaming v.3 by using CSS Flexbox.
-                </div>
-                </a>
-            </div><!-- End Flex Item-->
-
-            <div class="flex-item">
-                <a href="flexsport.html" target="_blank">
-                <div class="item-image">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/National_Football_League_logo.svg/1200px-National_Football_League_logo.svg.png" alt="#">
-                </div>
-                <div class="item-heading">
-                    Flexbox NFL/Sports Assignment
-                </div>
-                <div class="item-text">
-                  We made Flexbox NFL/Sports by using CSS Flexbox.
-                </div>
-                </a>
-            </div><!-- End Flex Item-->
-
-            <div class="flex-item">
-                <a href="flexfavoritemusic.html" target="_blank">
-                <div class="item-image">
-                    <img src="https://image.shutterstock.com/image-vector/music-note-design-element-doodle-260nw-616470641.jpg" alt="#">
-                </div>
-                <div class="item-heading">
-                    Flexbox Music
-                </div>
-                <div class="item-text">
-                    We made flexbox Music by using CSS Flexbox.
-                </div>
-                </a>
-            </div><!-- End Flex Item-->
-
-            
-
-
-
-        </div><!-- End Flex Container -->
-
-        <!-- End of a page section -->
-
-        <!-- Start of a page section-->
-        <h3 class="section-header">Full Websites</h3>
-        <div class="flex-container">
-
-            <div class="flex-item">
-                <a href="firstwebsites/index.html" target="_blank">
-                <div class="item-image">
-                    <img src="firstwebsites/images/myfirstfullwebsitepic.png" alt="#">
-                </div>
-                <div class="item-heading">
-                    First Full Website
-                </div>
-                <div class="item-text">
-                   We are using all of our knowledge and also our focus in order to do it.
-                </div>
-                </a>
-            </div><!-- End Flex Item-->
-
-
-            
-
-
-
-        </div><!-- End Flex Container -->
-
-        <!-- End of a page section -->
-
-
-
-
-
-
-	</div><!-- End of the container -->
-	<footer>
-		Made in FHS Web Design
-	</footer>
-
-
-    <!-- JavaScript will go under here-->
-
-
-
-
-
-
-
+        </style>
+        <link type="text/css" rel="stylesheet" href="css/firstwebsite.css">
+        <title>First Website Index</title>
+        
+        <title>First Website Index</title>
+    </head>
     
-<!-- Don't delete me please, but copy me...-->
-</body>
+    <body>
+        <header>
+            Placeholder
+        </header>
+        <nav>
+           <div class="nav-item">
+              <a href="index.html">Home Page</a>
+          </div>
+           <div class="nav-item">
+               <a href="gallery.html">Gallery Page</a>
+          </div>
+           <div class="nav-item">
+             <a href="favoritesites.html">Favorite Sites Page</a>
+            </div>
+        </nav>
+        <div class="jumbotron">
+          <img src="images/jumboplaceholder.png" alt="#">
+          <div class="jumbotron-inner">
+              <h1>My First Full Website</h1>
+                  <p>
+                      Mufidul Choudhury<br>
+                      Web 1, Hour:4th<br>
+                      12/12/21
+                  </p>
+          </div>
+          
+        </div>
+        
+        
+      
+        <div class="container">
+            <!-- Write your assignment code here -->
+            <!--Row 1 -->
+            <div class="row">
+               <div class="row-image">
+                 <img src="images/imagesPlaceholder.png" alt="#">
+               </div>
+               <div class="row-content">
+                   <h3>Row Header</h3>
+                   <p>
+                      Placeholder
+                   </p>
+               </div>
+              
+               
+            </div>
+            
+             <!--Row 2 -->
+              <div class="row">
+               <div class="row-image">
+                 <img src="images/imagesPlaceholder.png" alt="#">
+               </div>
+               <div class="row-content">
+                   <h3>Row Header</h3>
+                   <p>
+                      Placeholder
+                   </p>
+               </div>
+              
+               
+            </div>
+              <!--End of Row 2 -->
+             
+              <!--Row 3 -->
+               <div class="row">
+               <div class="row-image">
+                 <img src="images/imagesPlaceholder.png" alt="#">
+               </div>
+               <div class="row-content">
+                   <h3>Row Header</h3>
+                   <p>
+                      Placeholder
+                   </p>
+               </div>
+              
+               
+            </div>
+               <!--End of Row 3-->
+            
+            
+            
+        </div><!-- Closing tag for container -->
+        <footer>
+            Placeholder
+        </footer>
+    </body>
 </html>
